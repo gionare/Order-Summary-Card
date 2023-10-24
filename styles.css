@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Colors*/
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  /* All selector */
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  box-sizing: border-box; /* better to use as deafault */
+}
+
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Pale-blue);
+  font-family: "Red Hat Display";
+}
+
+.card {
+  width: 375px;
+  background-color: white;
+  color: ;
+  border-radius: 20px;
+  overflow: hidden; /* top corners gone be bordeer-radius as well */
+  margin: auto;
+  padding: 0px;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: ;
+}
+
+.illustration-img {
+  width: 100%;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container > * {
+  /* all of the chirdren in container will get wollowing properties  */
+  margin: 13px 0;
+}
+
+.order-desc {
+  line-height: 25px;
+}
+
+.plan-container {
+  font-size: 16px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 12px;
+  padding: 25;
+  display: flex;         /* to arrange on horizont */
+  flex-direction: row;
+  justify-content: space-between; /* space between items  */
+  align-items: center;
+}
+
+.plan-container a {
+    color: var(--Bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-container a:hover{
+    opacity: 0.8;
+    text-decoration: none;   /* no underline as an decoration after mouse hover on it */
+}
+
+.plan-container strong{
+    color: var(--Dark-blue);
+}
+
+button {
+  width: 100%;
+  border: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.proceed-btn {
+  background-color: var(--Bright-blue);
+  padding: 1rem 0;
+  color: aliceblue;
+  box-shadow: 0 20px 30px -8px rgb(197 189 245); /* top right buttom left */
+}
+
+.proceed-btn:hover {
+  opacity: 0.8;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: var(--Desaturated-blue); /* text color */
+  box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.cancel-btn:hover {
+  color: black;
+}

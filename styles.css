@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap");
 
 @media (min-width: 1440px) {
   .third-container {
     width: 300px;
   }
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,16 +48,18 @@ body {
   overflow: hidden; /* top corners gone be bordeer-radius as well */
   margin: auto;
   padding: 0px;
+  margin: 50px auto; /* 50px is for top and buttom, auto is for right and left */
 }
 
 .title {
   color: var(--dark-blue);
-text-align: center;
-font-family: Red Hat Display;
-font-size: 28px;
-font-style: normal;
-font-weight: 900;
-line-height: normal; 
+  text-align: center;
+  margin: auto;
+  font-family: Red Hat Display;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
 .illustration-img {
@@ -76,25 +76,24 @@ line-height: normal;
 }
 
 .order-desc {
-  color: #717FA6;
-text-align: center;
-font-family: Red Hat Display;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 162.5% */ 
+  color: #717fa6;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
 }
 
 .plan-container {
   width: 354px;
-height: 98px;
-flex-shrink: 0;
-
+  height: 98px;
+  flex-shrink: 0;
 
   font-size: 16px;
   background-color: var(--Very-pale-blue);
   border-radius: 12px;
-  display: flex;         /* to arrange on horizont */
+  display: flex; /* to arrange on horizont */
   flex-direction: row;
   justify-content: space-between; /* space between items  */
   align-items: center;
@@ -102,25 +101,25 @@ flex-shrink: 0;
 }
 
 .plan-container a {
-    color: var(--Bright-blue);
-    font-size: 13px;
-    font-weight: 700;
+  color: var(--Bright-blue);
+  font-size: 13px;
+  font-weight: 700;
 }
 
-.plan-container a:hover{
-    opacity: 0.8;
-    text-decoration: none;   /* no underline as an decoration after mouse hover on it */
+.plan-container a:hover {
+  opacity: 0.8;
+  text-decoration: none; /* no underline as an decoration after mouse hover on it */
 }
 
-.plan-container strong{
-    color: var(--Dark-blue);
+.plan-container strong {
+  color: var(--Dark-blue);
 }
 
-.plan-desc p{
-  color: #717FA6;
-font-size: 16px;
-font-weight: 500;
-line-height: normal;
+.plan-desc p {
+  color: #717fa6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 button {
@@ -154,4 +153,26 @@ button {
 
 .attribution {
   padding-top: 10px;
+}
+
+/* % ჯობია გამოვიყენო, და ფლექს უმჯობესია  */
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 1000px;
+    width: 450px;
+    height: 697px;
+    top: 102px;
+    left: 495px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    width: 1000px;
+    width: 450px;
+    height: 697px;
+    top: 102px;
+    left: 495px;
+  }
 }

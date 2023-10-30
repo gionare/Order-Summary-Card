@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./(design/active-states.jpg))
+![](./design/active-states.jpg)
 
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
